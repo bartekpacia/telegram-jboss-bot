@@ -1,8 +1,14 @@
 {
     "extends": "airbnb-base",
     "rules": {
-        "no-console": "off",
+        "no-console": "warn",
         "prefer-destructuring": "off",
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "no-unused-vars": "warn",
+        "padded-blocks": "off",
+        "no-trailing-spaces": "warn",
+        "prefer-const": "warn",
+        "no-plusplus": "off",
+        "no-empty": "off"
     }
 }
