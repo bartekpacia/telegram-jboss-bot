@@ -1,0 +1,22 @@
+{
+  "name": "telegram-jboss-bot",
+  "version": "1.0.0",
+  "description": "Simple telegram bot. Made for GCI 2018",
+  "main": "bot.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "node-telegram-bot-api": "^0.30.0",
+    "request": "^2.88.0",
+    "string-similarity": "^2.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bartekpacia",
+  "license": "MIT"
+}
