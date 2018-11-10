@@ -24,10 +24,10 @@ bot.onText(/\/getinfo (.+)/, async (msg, match) => {
   // 'match' is the result of executing the regexp above on the text content
   // of the message (so in this case, basically everything following /getinfo)
   const chatId = msg.chat.id;
-  const enteredText = match[1];
-  console.log(`---New query--- \nQuery: ${enteredText}`);
+  const input = match[1];
+  logNewQuery(input);
 
-  const url = await processUrl(enteredText);
+  const url = await processUrl(input);
   const message = await processMessage(url);
   bot.sendMessage(chatId, message, { parse_mode: 'Markdown' });
 });
@@ -92,6 +92,15 @@ Github: ${githubLink}`;
   });
 
   return message;
+}
+
+// Log the query and time
+function logNewQuery(input) {
+  const date = new Date();
+  const utcDate = date.toUTCString();
+
+  console.log('------------------------------------------');
+  console.log(`New query has occurred on ${utcDate}\nQuery: ${input}`);
 }
 
 // Provide help feature
