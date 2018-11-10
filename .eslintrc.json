@@ -1,7 +1,10 @@
 {
     "extends": "airbnb-base",
+    "parserOptions": {
+        "ecmaVersion": 2017 
+    },
     "rules": {
-        "no-console": "warn",
+        "no-console": "off",
         "prefer-destructuring": "off",
         "linebreak-style": ["error", "windows"],
         "no-unused-vars": "warn",
@@ -9,6 +12,7 @@
         "no-trailing-spaces": "warn",
         "prefer-const": "warn",
         "no-plusplus": "off",
-        "no-empty": "off"
+        "no-empty": "off",
+        "no-use-before-define": "off"
     }
 }

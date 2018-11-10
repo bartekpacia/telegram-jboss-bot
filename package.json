@@ -7,6 +7,7 @@
     "dotenv": "^6.1.0",
     "node-telegram-bot-api": "^0.30.0",
     "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
     "string-similarity": "^2.0.0"
   },
   "devDependencies": {
